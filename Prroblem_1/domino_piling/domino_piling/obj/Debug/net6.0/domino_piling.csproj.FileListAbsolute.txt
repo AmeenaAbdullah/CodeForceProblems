@@ -1,0 +1,15 @@
+D:\codeforceProblems\Prroblem_1\domino_piling\domino_piling\bin\Debug\net6.0\domino_piling.exe
+D:\codeforceProblems\Prroblem_1\domino_piling\domino_piling\bin\Debug\net6.0\domino_piling.deps.json
+D:\codeforceProblems\Prroblem_1\domino_piling\domino_piling\bin\Debug\net6.0\domino_piling.runtimeconfig.json
+D:\codeforceProblems\Prroblem_1\domino_piling\domino_piling\bin\Debug\net6.0\domino_piling.dll
+D:\codeforceProblems\Prroblem_1\domino_piling\domino_piling\bin\Debug\net6.0\domino_piling.pdb
+D:\codeforceProblems\Prroblem_1\domino_piling\domino_piling\obj\Debug\net6.0\domino_piling.csproj.AssemblyReference.cache
+D:\codeforceProblems\Prroblem_1\domino_piling\domino_piling\obj\Debug\net6.0\domino_piling.GeneratedMSBuildEditorConfig.editorconfig
+D:\codeforceProblems\Prroblem_1\domino_piling\domino_piling\obj\Debug\net6.0\domino_piling.AssemblyInfoInputs.cache
+D:\codeforceProblems\Prroblem_1\domino_piling\domino_piling\obj\Debug\net6.0\domino_piling.AssemblyInfo.cs
+D:\codeforceProblems\Prroblem_1\domino_piling\domino_piling\obj\Debug\net6.0\domino_piling.csproj.CoreCompileInputs.cache
+D:\codeforceProblems\Prroblem_1\domino_piling\domino_piling\obj\Debug\net6.0\domino_piling.dll
+D:\codeforceProblems\Prroblem_1\domino_piling\domino_piling\obj\Debug\net6.0\refint\domino_piling.dll
+D:\codeforceProblems\Prroblem_1\domino_piling\domino_piling\obj\Debug\net6.0\domino_piling.pdb
+D:\codeforceProblems\Prroblem_1\domino_piling\domino_piling\obj\Debug\net6.0\domino_piling.genruntimeconfig.cache
+D:\codeforceProblems\Prroblem_1\domino_piling\domino_piling\obj\Debug\net6.0\ref\domino_piling.dll
