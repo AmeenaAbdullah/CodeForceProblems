@@ -1,0 +1,14 @@
+from os import *
+from sys import *
+from collections import *
+from math import *
+
+def titleToNumber(stringStr):
+    res=0
+    lenght=0
+    for i in range(0,len(stringStr)):
+        index=len(stringStr)-i-1
+        lenght= (26)**index
+        res+=lenght*(ord(stringStr[i])-65+1)
+        
+    return res

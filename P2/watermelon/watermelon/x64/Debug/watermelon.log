@@ -1,0 +1,4 @@
+﻿  Source.cpp
+D:\codeforceProblems\P2\watermelon\watermelon\Source.cpp(6,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\codeforceProblems\P2\watermelon\watermelon\Source.cpp(36,44): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  watermelon.vcxproj -> D:\codeforceProblems\P2\watermelon\x64\Debug\watermelon.exe

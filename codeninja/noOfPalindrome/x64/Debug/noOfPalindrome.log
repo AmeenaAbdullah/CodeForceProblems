@@ -1,0 +1,4 @@
+﻿  Source.cpp
+D:\codeforceProblems\codeninja\noOfPalindrome\Source.cpp(71,42): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\codeforceProblems\codeninja\noOfPalindrome\Source.cpp(29): warning C4715: 'sortbinarytree': not all control paths return a value
+  noOfPalindrome.vcxproj -> D:\codeforceProblems\codeninja\noOfPalindrome\x64\Debug\noOfPalindrome.exe

@@ -1,0 +1,52 @@
+from os import *
+from sys import *
+from collections import *
+from math import *
+
+# Following is the Binary Tree Node class structure:     
+class BinaryTreeNode:
+    def __init__ (self,data):
+        self.data=data
+        self.left=None
+        self.right=None
+
+def sortnumber(lis):
+    for i in range(0,len(lis)):
+         for j in range(i+1,len(lis)):
+            
+            num1=str(lis[i])
+            num2=str(lis[j])
+            
+            num12=num1+num2
+            num21=num2+num1
+            if int(num12)<int(num21):
+                temp=lis[i]
+                lis[i]=lis[j]
+                lis[j]=temp
+    
+    if len(lis)>0 and all(item==0 for item in lis):
+        list2=[0]
+        return list2 
+    return lis           
+          
+    
+def printLargest(root):
+    numbers=[]
+    stack=[]
+    current=root
+    while True:
+        if  current is not None:
+            stack.append(current)
+            current=current.left
+        elif(stack):
+            current=stack.pop()
+            numbers.append(current.data);
+            current=current.right
+        else:
+            break
+    numstr=sortnumber(numbers)
+    stri=''.join(str(e) for e in numstr)
+        
+    
+    return stri
+    
