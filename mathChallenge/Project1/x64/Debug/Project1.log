@@ -1,0 +1,4 @@
+﻿  Source.cpp
+D:\codeforceProblems\mathChallenge\Project1\Source.cpp(8,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\codeforceProblems\mathChallenge\Project1\Source.cpp(59,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Project1.vcxproj -> D:\codeforceProblems\mathChallenge\Project1\x64\Debug\Project1.exe

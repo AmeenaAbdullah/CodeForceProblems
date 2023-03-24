@@ -1,0 +1,29 @@
+#include<iostream>
+#include<fstream>
+#include<sstream>
+#include<vector>
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int main(int args, char** argsv) {
+	string inputFile = argsv[1]; //input file path is stored at index 1 or arguments
+	fstream infile(inputFile, ios::in); //open file in read mode
+	string steps,vertical_merge,rows;
+	getline(infile, steps);
+	getline(infile, vertical_merge);
+	getline(infile, rows);
+	
+	//convert the input from string into integer
+	int no_of_steps=stoi(steps);
+	int  vertical_merges=stoi(vertical_merge);
+	int no_of_rows=stoi(rows);
+	
+	arr = new int*[no_of_rows];
+	
+	while (getline(infile, readline)) {
+	
+	}
+
+
+}

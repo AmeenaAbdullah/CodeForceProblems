@@ -1,0 +1,16 @@
+
+
+ameenaabdullah946@gmail.com
+
+
+
+
+
+
+
+0e67ade15b83b5b16b1558180aaea751
+
+
+
+import sys
+name=open(sys.arg[1],'r')

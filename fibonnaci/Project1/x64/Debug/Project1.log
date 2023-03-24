@@ -1,0 +1,4 @@
+﻿  Source.cpp
+D:\codeforceProblems\fibonnaci\Project1\Source.cpp(72,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\codeforceProblems\fibonnaci\Project1\Source.cpp(37): warning C4715: 'post_order': not all control paths return a value
+  Project1.vcxproj -> D:\codeforceProblems\fibonnaci\Project1\x64\Debug\Project1.exe

@@ -1,0 +1,57 @@
+#include<iostream>
+#include<fstream>
+#include<sstream>
+#include<vector>
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int main(int args, char** argsv) {
+	string inputFile = argsv[1]; //input file path is stored at index 1 or arguments
+	fstream infile(inputFile, ios::in); //open file in read mode
+	string seating_C,tourists;
+	getline(infile, tourists);
+	getline(infile, seating_C);
+	
+	//split string 
+	vector<int> T;
+    stringstream ss1(tourists);
+    while (ss1.good()) {
+        string substr;
+        getline(ss1, substr, ',');
+        T.push_back(stoi(substr));
+    }
+	
+	//split string 
+	vector<int> S;
+    stringstream ss2(seating_C);
+    while (ss2.good()) {
+        string substr;
+        getline(ss2, substr, ',');
+        S.push_back(stoi(substr));
+    }
+	
+	//total number of tourist 
+	int no_of_tourist=accumulate(T.begin(),T.end(),0);
+	
+	// number of vehicle required and store sum
+	int sum=0,no_of_vehicle=0;
+	
+	//sort the seating array 
+    sort(S.begin(), S.end(), greater<int>());
+	
+	//store the sum of seating capacity
+	for(int i=0;i<S.size();i++){
+	   if(sum<no_of_tourist){
+	   sum+=S[i];
+	   no_of_vehicle++;   
+		   
+	   }
+	}
+	cout<<no_of_vehicle;
+	
+	
+	
+ 
+	
+}

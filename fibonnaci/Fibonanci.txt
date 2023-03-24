@@ -1,0 +1,13 @@
+int fibinnaci(int nth) {
+	int n1 = 1, n2 = 1;
+	if (nth == 1 || nth == 2)
+		return n1;
+	for (int i = 3; i <=nth; i++) {
+		n1 = n1 + n2;
+		//swap
+        n1= n1 + n2;
+		n2 = n1 - n2;
+		n1 = n1 - n2;
+	}
+	return n2;
+}

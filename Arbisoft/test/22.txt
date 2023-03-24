@@ -1,0 +1,123 @@
+#include<iostream>
+#include<fstream>
+#include<sstream>
+#include<vector>
+#include <bits/stdc++.h>
+using namespace std;
+
+void height_of_building(int **arr, int steps, int vertical_merge,int row,int col){
+  
+  //temp array which store results
+  int** temp = new int*[row];	
+  for(int i = 0;i < row;i++) {
+   temp[i] = new int[col];
+   }
+	
+  for(int i=0;i<steps;i++){
+       for(int j=0;j<col;j++){
+	    temp[i][j]=arr[i][j];
+	  }
+	 }
+  int sum=0;
+  int temp_row=0;
+	
+ //iterate array with steps and destruct on each floor
+  for(int i=0;i<steps;i++){
+     for(int j=0 ; j<col ; j++){
+		 
+		 int temp_merge=vertical_merge;
+	     temp_row=i;
+		 sum=arr[i][j];
+		 while(temp_merge>0){
+		  if(sum>arr[temp_row][j]){
+		    temp[temp_row][j]=0;
+			  
+			sum+=arr[i][j]+arr[i+1][j];
+			temp_row++;
+			temp[temp_row][j]=sum;
+			
+		   }
+		   else{
+		    arr[temp_row][j]=sum+arr[temp_row+1][j];
+		   }
+			 temp_merge--;
+		 	 
+		}
+	 }
+  
+  }
+	//list of building height
+	int height[col]={ 0 };
+	
+	 for(int i=0;i<row;i++){
+       for(int j=0;j<col;j++){
+	    if(temp[i][j]==0){
+	     height[j]++;
+	   }
+	  }
+		
+	 }
+	for(int i=0;i<col;i++){
+	  cout<<height[i]<< "," ;
+	}
+
+}
+int main(int args, char** argsv) {
+	string inputFile = argsv[1]; //input file path is stored at index 1 or arguments
+	fstream infile(inputFile, ios::in); //open file in read mode
+	string steps,vertical_merge,rows;
+	getline(infile, steps);
+	getline(infile, vertical_merge);
+	getline(infile, rows);
+	
+	//convert the input from string into integer
+	int no_of_steps=stoi(steps);
+	int  vertical_merges=stoi(vertical_merge);
+	int no_of_rows=stoi(rows);
+	
+	int no_of_col=0;
+	int col=0;
+	
+	//get columns
+	string read_First_Row;
+	getline(infile, read_First_Row);
+	stringstream ss(read_First_Row);
+          while (ss.good()) {
+           string substr;
+           getline(ss, substr, ',');
+		   no_of_col++;
+          }	
+	
+   //2D ARRAY
+   int** arr = new int*[no_of_rows];	
+	for(int i = 0;i < no_of_rows;i++) {
+    arr[i] = new int[no_of_col];
+    }
+	
+	//store first row
+	col=0;
+	stringstream ss2(read_First_Row);
+          while (ss2.good()) {
+           string substr;
+           getline(ss2, substr, ',');
+		    arr[0][col++]=stoi(substr);
+          }	
+
+	//read input and store array elements into 2D array
+	for(int i=1;i<no_of_rows;i++){
+	 col=0;	
+	 string readline;	
+	 getline(infile, readline);
+	 stringstream ss(readline);
+          while (ss.good()) {
+           string substr;
+           getline(ss, substr, ',');
+		   arr[i][col++]=stoi(substr);
+          }	
+	 	
+	}
+  
+	
+	height_of_building(arr,no_of_steps,vertical_merges,no_of_rows,no_of_col);
+
+}

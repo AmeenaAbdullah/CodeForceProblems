@@ -1,0 +1,25 @@
+import sys
+from urllib.request import urlopen
+import json
+# store the URL in url as
+# parameter for urlopen
+url1 = "https://www.jsonkeeper.com/b/DM5F"
+# store the response of URL
+ridesAPI = urlopen(url1)
+# storing the JSON response
+# from url in data
+rides_API = json.loads(ridesAPI.read())
+
+url2 = " https://www.jsonkeeper.com/b/9QRZ"
+# store the response of URL
+PaymentsAPI = urlopen(url2)
+# storing the JSON response
+Payments_API = json.loads(PaymentsAPI.read())
+
+name=open(sys.argv[1],'r')
+testcases=int(name.readline())
+
+
+for x in range(testcases):
+    print(x)	
+	

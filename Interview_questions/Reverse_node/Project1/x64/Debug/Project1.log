@@ -1,0 +1,3 @@
+﻿  Source.cpp
+D:\codeforceProblems\Interview_questions\Reverse_node\Project1\Source.cpp(319,23): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Project1.vcxproj -> D:\codeforceProblems\Interview_questions\Reverse_node\Project1\x64\Debug\Project1.exe
